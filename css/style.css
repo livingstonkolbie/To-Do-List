@@ -3,6 +3,10 @@
     height: 15px;
 }
 
+.checkboxStyle:hover {
+    transform: scale(1.1);
+}
+
 .paraStyle {
     padding: 0 2%;
     font-size: larger;
@@ -10,10 +14,32 @@
 
 .button {
     background-color: lightseagreen;
-    border-radius: 2px;
-    
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
 
 .listOfItems {
     padding: 0 15%;
+}
+
+@media (min-width: 768px) {
+    .listOfItems {
+        padding: 0 30%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .listOfItems {
+        padding: 0 35%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .listOfItems {
+        padding: 0 39%;
+    }
 }
