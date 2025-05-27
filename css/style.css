@@ -1,3 +1,11 @@
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/008/058/831/non_2x/a-simple-modern-abstract-design-a-beautiful-soft-off-white-element-twisting-and-flowing-on-a-beige-background-illustration-vector.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .checkboxStyle {
     width: 15px;
     height: 15px;
@@ -13,7 +21,7 @@
 }
 
 .button {
-    background-color: lightseagreen;
+    background-color: rgba(32, 178, 171, 0.716);
     border-radius: 6px;
     font-weight: bold;
 }
