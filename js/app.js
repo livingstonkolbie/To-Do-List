@@ -13,14 +13,24 @@ addTaskButton.addEventListener("click", () => {
     inputBox.checked = false;
     let checkBox = document.createTextNode(inputBox);
     inputBox.appendChild(checkBox);
+    inputBox.classList.add("checkboxStyle");
     
     let newItem = document.createElement("p");
     let node = document.createTextNode(item);
     newItem.appendChild(node);
     newItem.classList.add("d-inline");
+    newItem.classList.add("paraStyle");
     newItem.id = "theToDo";
 
     let newBreak = document.createElement("br");
+
+    inputBox.addEventListener("change", () => {
+        if (inputBox.checked) {
+            inputBox.remove();
+            newItem.remove();
+            newBreak.remove();
+        }
+    });
 
     let element = document.getElementById("listOfItems");
     element.appendChild(inputBox);
@@ -32,19 +42,6 @@ addTaskButton.addEventListener("click", () => {
     };
 
     clearFields();
-
-
-    // this part is trippin me up... why can't i remove the to-do item
-    function clearListItem() {
-        let eraserClick = document.getElementById("theToDo");
-        eraserClick.addEventListener("click", () => {
-            eraserClick.remove();
-        });
-
-        clearListItem();
-    }
-    
-    
     
 });
 
