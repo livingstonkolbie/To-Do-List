@@ -1,16 +1,11 @@
 
-
+// BELOW is tooltips from Bootstrap
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-
-// $(function () {
-//   $('[data-toggle="tooltip"]').tooltip()
-// })
 
 let toDoItem = document.getElementById("userInput");
 let addTaskButton = document.getElementById("addTask");
-
 
 
 addTaskButton.addEventListener("click", () => {
