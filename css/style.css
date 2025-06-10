@@ -3,6 +3,7 @@ body {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Quicksand", sans-serif;
 }
 
 
@@ -32,6 +33,10 @@ body {
 
 .listOfItems {
     padding: 0 15%;
+}
+
+.dropdown {
+    display: inline;
 }
 
 @media (min-width: 768px) {
